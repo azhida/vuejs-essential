@@ -1,4 +1,4 @@
-# vuejs-essential1
+# vuejs-essential
 
 ## Project setup
 ```
