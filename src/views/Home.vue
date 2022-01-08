@@ -25,12 +25,17 @@ export default {
   beforeRouteEnter(to, from, next) {
     const fromName = from.name
     const logout = to.params.logout
-
+  
     next(vm => {
       if (vm.$store.state.auth) {
         switch (fromName) {
           case 'Register':
             vm.showMsg('注册成功')
+            break
+          // 已登录时，从登录页面跳转过来
+          case 'Login':
+            // 显示登录成功
+            vm.showMsg('登录成功')
             break
         }
       } else if (logout) {
