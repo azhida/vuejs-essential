@@ -14,6 +14,7 @@ const state = {
   articles: ls.getItem('articles'),
   // 搜索值
   searchValue: '',
+  origin: location.origin
 }
 
 const mutations = {
