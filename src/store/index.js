@@ -14,7 +14,9 @@ const state = {
   articles: ls.getItem('articles'),
   // 搜索值
   searchValue: '',
-  origin: location.origin
+  // origin: location.origin,
+  // 配置过 GitHub Pages，可以使用下面的值
+  origin: location.origin.indexOf('github.io') !== -1 ? `${location.origin}/vuejs-essential/dist` : location.origin,
 }
 
 const mutations = {
