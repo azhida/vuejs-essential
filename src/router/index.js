@@ -5,7 +5,8 @@ import routes from './routes'
 Vue.use(Router)
 
 const router =  new Router({
-  mode: 'history',
+  // 注释掉，避免刷新报错 404
+  // mode: 'history',
   linkExactActiveClass: 'active',
   // 指定滚动行为
   scrollBehavior(to, from, savedPosition) {
